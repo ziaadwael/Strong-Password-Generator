@@ -1,0 +1,73 @@
+:root {
+    --main-bg-color: #4A21B2;
+    --main-container-color: #8C0F4B;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+    background-color: var(--main-container-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.container input {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor:not-allowed;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.container button {
+    width: 65%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.container button:last-child {
+    display: none;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+}
